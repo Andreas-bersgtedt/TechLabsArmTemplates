@@ -1,0 +1,87 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "swr-cid-syn-ws-dev"
+        },
+      
+        "defaultDataLakeStorageAccountName": {
+            "value": "swrcidsynsadev"
+        },
+        "defaultDataLakeStorageFilesystemName": {
+            "value": "root"
+        },
+        "sqlAdministratorLogin": {
+            "value": "sqladminuser"
+        },
+        "sqlAdministratorLoginPassword": {
+            "value": "*YBmd0n98ennfe0ndf)N08"
+        },
+        "setWorkspaceIdentityRbacOnStorageAccount": {
+            "value": true
+        },
+        "allowAllConnections": {
+            "value": false
+        },
+        "grantWorkspaceIdentityControlForSql": {
+            "value": "Enabled"
+        },
+        "managedVirtualNetwork": {
+            "value": "default"
+        },
+        "tagValues": {
+            "value": {
+                "workspaceType": "dev",
+                "OrgName": "snow"
+            }
+        },
+        
+       
+        "isNewStorageAccount": {
+            "value": true
+        },
+        "isNewFileSystemOnly": {
+            "value": false
+        },
+        "adlaResourceId": {
+            "value": ""
+        },
+        "managedResourceGroupName": {
+            "value": ""
+        },
+        "storageAccessTier": {
+            "value": "Hot"
+        },
+        "storageAccountType": {
+            "value": "Standard_RAGRS"
+        },
+        "storageSupportsHttpsTrafficOnly": {
+            "value": true
+        },
+        "storageKind": {
+            "value": "StorageV2"
+        },
+        "storageIsHnsEnabled": {
+            "value": true
+        },
+        "userObjectId": {
+            "value": "b63a8b21-ba9b-45bb-9e28-3a0372a083b6"
+        },
+        "setSbdcRbacOnStorageAccount": {
+            "value": true
+        },
+        "setWorkspaceMsiByPassOnStorageAccount": {
+            "value": false
+        },
+        "workspaceStorageAccountProperties": {
+            "value": {}
+        },
+        "managedVirtualNetworkSettings": {
+            "value": {
+                "allowedAadTenantIdsForLinking": [],
+                "preventDataExfiltration": false
+            }
+        }
+    }
+}
